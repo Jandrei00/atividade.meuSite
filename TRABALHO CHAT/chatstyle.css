@@ -1,0 +1,168 @@
+* { 
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box; /*garante que a borda nao aumente*/
+}
+
+/* ESTILOS GERAIS DA PAGINA*/
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    color: rgb(42, 165, 44);
+    line-height: 1.6;
+    background:'https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/1554B/production/_127317378_gettyimages-1433987792.jpg.webp';
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Cabecalho HEADER */
+header{
+background-color: rgb(43, 255, 0);
+color: white;
+padding: 30px 20px;
+box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/*NAVEGACAO*/
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover{
+background-color: orange;
+color: blue;
+transform: translateY(-10px);
+}
+
+/* CONTEUDO PRINCIPAL*/
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ARTIGOS e SECOES*/
+
+article, section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+article h2, section h3 {
+    color: blue;
+    margin-bottom: 15px;
+}
+
+article img {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+margin-bottom: 15px;
+border: 1px solid white;
+}
+
+/*LISTAS E OUTRAS NOTICIAS*/
+
+section ul {
+    list-style: none;
+}
+
+section ul li {
+    padding: 12px 0;
+    border-bottom: 1px solid white;
+}
+
+section ul li:last-child{
+ border-bottom: none;
+}
+
+/*RODAPE*/
+
+footer{
+    background-color: gray;
+    color: azure;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+footer hr {
+    border: none;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* BOTÃO DE CONTATO FLUTUANTE */
+.contact-nav {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.contact-nav a {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+/* hover */
+.contact-nav a:hover {
+    background-color: blue;
+    transform: translateY(-5px);
+}
+
+/* clique */
+.contact-nav a:active {
+    transform: scale(0.95);
+}
+
+/* acessibilidade */
+.contact-nav a:focus {
+    outline: 2px solid white;
+}
